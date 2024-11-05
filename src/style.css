@@ -1,0 +1,497 @@
+/* General settings */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+  }
+  
+  /* Header Styles */
+  header {
+    width: 100%;
+    padding: 10px 5%; /* Mantiene un padding fluido que se ajusta al tamaño de la pantalla */
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+  }
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    max-width: 1200px; /* Para limitar el ancho del footer */
+    margin: 0 auto; /* Centra el footer */
+    padding: 20px; /* Espaciado interno */
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Texto blanco para contraste */
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Un poco más pequeño que el texto general */
+}
+
+/* Body (Content) Styles */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el cuerpo siempre ocupe toda la altura de la pantalla */
+}
+
+/* Cabecera */
+.Cabecera__Informacion {
+    display: flex;
+    justify-content: space-between; /* Mantiene el espacio entre los elementos */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.cabecera__izquierda {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Ocupa el espacio disponible */
+    min-width: 200px; /* Evita que se haga demasiado pequeña en pantallas más chicas */
+}
+
+.logo__item {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nombre__propietario {
+    font-size: 18px;
+    font-weight: bold;
+    color: #464646;
+}
+
+/* Navegación a la derecha */
+.navegacion__cabecera {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    gap: 15px;
+    flex-wrap: wrap; /* Permite que los enlaces se ajusten si hay poco espacio */
+    flex: 2; /* Permite que la navegación ocupe el doble de espacio que la parte izquierda */
+}
+
+.navegacion__cabecera a {
+    text-decoration: none;
+    color: #464646;
+    font-size: 16px;
+}
+
+.navegacion__cabecera a:hover {
+    color: #0056b3;
+}
+
+.cabecera__contacto {
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+/* Estilo del contenedor principal */
+.perfil {
+    width: 1136px; /* Ancho fijo */
+    margin: 32px auto; /* Centrar horizontalmente */
+    height: auto;  /* Altura ajustada automáticamente */
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    gap: 0; /* Sin separación entre los hijos del contenedor */
+}
+
+/* Presentación del perfil */
+.perfil__presentacion {
+    width: 751px; /* Ancho fijo */
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    gap: 24px; /* Espaciado entre h1, p y redes sociales */
+}
+
+/* Título principal */
+.perfil__presentacion h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61px; /* Ajustar línea */
+    text-align: left;
+    color: #464646;
+}
+
+/* Texto descriptivo */
+.perfil__presentacion p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #464646;
+}
+
+/* Redes sociales */
+.perfil__redes-sociales {
+    display: flex;
+    gap: 32px; /* Espaciado entre los enlaces */
+}
+
+/* Lista de redes sociales */
+.perfil__redes-sociales ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Elementos de la lista */
+.perfil__redes-sociales li {
+    display: flex;
+    align-items: center; /* Centra verticalmente los enlaces */
+}
+
+/* Estilos de enlaces de redes sociales */
+.perfil__redes-sociales a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #464646;
+    text-decoration: none;
+}
+
+/* Imagen de perfil */
+.perfil__imagen {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-shrink: 0; /* Evitar que la imagen se reduzca */
+}
+
+/* Estilo circular para la imagen */
+.imagen__circular {
+    width: 360px; /* Ajusta según el diseño */
+    height: 360px;
+    border-radius: 50%; /* Hacer la imagen circular */
+    object-fit: cover; /* Para que la imagen no se deforme */
+}
+
+/* Segunda Sección Sobre mi */
+
+.sobre__mi {
+    width: Fill (1,440px)px;
+    height: Hug (383px)px;
+    padding: 64px 0px 0px 0px;
+    gap: 10px;
+    opacity: 0px;
+    background: #EAF2FD;
+}
+
+/* Estilo para la sección completa */
+.sobre__mi {
+    width: 100%; /* Ancho completo de la página */
+    height: auto; /* Ajustar la altura según el contenido */
+    background-color: #F5F5F5; /* Cambia el color de fondo según tus necesidades */
+    padding: 64px 0; /* Espaciado superior según Figma */
+    display: flex;
+    justify-content: center; /* Centrar el contenido */
+    opacity: 1; /* Ajuste de opacidad si lo requieres */
+}
+
+/* Contenido dentro de la sección */
+.sobre__mi__contenido {
+    width: 1136px; /* Ancho fijo del contenido interior */
+    height: auto; /* Altura ajustada automáticamente */
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    gap: 16px; /* Espaciado entre h2 y los párrafos */
+    opacity: 1; /* Ajuste de opacidad si es necesario */
+}
+
+/* Estilos para el título h2 */
+.sobre__mi h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px; /* Tamaño de fuente ajustable */
+    font-weight: 700;
+    line-height: 42px; /* Línea más alta para el encabezado */
+    text-align: left;
+    color: #464646;
+}
+
+/* Estilos para los párrafos */
+.sobre__mi p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #464646;
+}
+
+/* Sección de skills */
+.skills-section {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 50px;
+}
+
+.skills-title, .hobbies-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+    color: #464646;
+    margin: 0;
+}
+
+/* Lista de skills */
+.skills-list, .hobbies-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.skill-item, .hobby-item {
+    width: 176px;
+    height: 174px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0 0 0;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Iconos de skills y hobbies */
+.skill-icon, .hobby-icon {
+    width: 40px; /* Tamaño de los íconos */
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Texto de skills y hobbies */
+.skill-text, .hobby-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.78px;
+    color: #464646;
+    text-align: center;
+    margin: 0;
+}
+
+/* Estudios */
+/* Sección de educación */
+.education-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 50px;
+}
+
+.education-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+    color: #464646;
+    margin: 0;
+    width: 339px;
+}
+
+/* Lista de formación académica */
+.education-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+    justify-content: center;
+}
+
+.education-item {
+    width: 30%;
+    max-width: 368px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.education-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.education-university {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    color: #464646;
+    margin: 8px 16px 0 16px;
+}
+
+.education-date {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    color: #464646;
+    margin: 0 16px 16px 16px;
+}
+
+/* Experiencia */
+
+/* Sección de experiencia profesional */
+.experience-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.experience-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+    color: #464646;
+    margin: 0;
+}
+
+.experience-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7d7d7d;
+    text-align: center;
+    margin: 0;
+}
+
+/* Media Queries Tablet */
+@media (max-width: 768px) {
+    /* Ajusta la cabecera */
+    .Cabecera__Informacion {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navegacion__cabecera {
+        justify-content: center;
+    }
+
+    /* Ajusta el perfil */
+    .perfil {
+        width: 100%; /* Ancho completo */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .perfil__presentacion {
+        width: 90%; /* Ancho fluido en pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+    }
+
+    .perfil__presentacion h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .perfil__presentacion p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .imagen__circular {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Ajuste de secciones de contenido */
+    .sobre__mi__contenido, .skills-section, .hobbies-section, .education-section, .experience-section {
+        width: 90%;
+    }
+
+    .education-item, .skill-item, .hobby-item {
+        width: 48%; /* Dos elementos por fila */
+    }
+}
+
+/* Estilos responsivos para móviles (ancho máximo de 599px) */
+@media (max-width: 599px) {
+    /* Ajusta la cabecera */
+    .Cabecera__Informacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navegacion__cabecera {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* Perfil */
+    .perfil {
+        width: 100%;
+        padding: 0 5%; /* Espacio lateral */
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .perfil__presentacion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .perfil__presentacion h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .perfil__presentacion p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .imagen__circular {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Ajuste de secciones de contenido */
+    .sobre__mi__contenido, .skills-section, .hobbies-section, .education-section, .experience-section {
+        width: 90%;
+    }
+
+    /* Skills y hobbies */
+    .skill-item, .hobby-item {
+        width: 100%; /* Elemento por fila */
+        padding: 10px;
+        gap: 4px;
+    }
+
+    /* Educación */
+    .education-item {
+        width: 100%; /* Elemento por fila */
+        margin: 8px 0;
+    }
+}
